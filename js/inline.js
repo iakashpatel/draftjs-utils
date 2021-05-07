@@ -143,6 +143,7 @@ const customInlineStylesMap = {
   bgcolor: {},
   fontSize: {},
   fontFamily: {},
+  padding: {},
   CODE: {
     fontFamily: 'monospace',
     wordWrap: 'break-word',
@@ -184,6 +185,7 @@ export const getCustomStyleMap = () =>
     ...customInlineStylesMap.bgcolor,
     ...customInlineStylesMap.fontSize,
     ...customInlineStylesMap.fontFamily,
+    ...customInlineStylesMap.padding,
     CODE: customInlineStylesMap.CODE,
     SUPERSCRIPT: customInlineStylesMap.SUPERSCRIPT,
     SUBSCRIPT: customInlineStylesMap.SUBSCRIPT,
