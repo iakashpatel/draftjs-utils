@@ -250,7 +250,7 @@ export function extractInlineStyle(editorState) {
       } else if (style && style.indexOf('fontfamily-') === 0) {
         addToCustomStyleMap('fontFamily', 'fontFamily', style.substr(11));
       } else if (style && style.indexOf('padding-') === 0) {
-        addToCustomStyleMap('padding', 'padding', style.substr(8));
+        addToCustomStyleMap('padding', 'padding', +style.substr(8));
       }
     });
   }
